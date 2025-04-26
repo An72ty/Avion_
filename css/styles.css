@@ -7,11 +7,12 @@ main {
     padding: 0px 80px 0px 80px;
 }
 
-#logo, .nav-item, h1, p {
+#logo, .nav-item, h1, p, h2 {
     font-family: Roboto;
     font-weight: 400;
     line-height: 140%;
     letter-spacing: 0%;
+    color: #2A254B;
 }
 
 #logo, .nav-item, p {
@@ -24,6 +25,10 @@ a {
 
 h1 {
     font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
 }
 
 .sep {
@@ -77,7 +82,7 @@ nav {
     background: #2A254B url("/images/chair.png") no-repeat right / contain;
     margin: 25px 0px;
     padding: 60px 48% 60px 60px;
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -96,22 +101,24 @@ nav {
     line-height: 140%;
     letter-spacing: 0%;
     flex: auto;
-    transition: 200ms;
+    transition: 0.5s;
     /* display: block; */
     text-align: center;
 }
 
 .btn.primary:hover {
-    box-shadow:0 0 20px #9186db;
+    /* box-shadow:0 0 20px #9186db; */
+    background-color: #f9f9f965;
 }
 
 .btn.secondary:hover {
-    box-shadow:0 0 20px #aaaaaa;
+    /* box-shadow:0 0 20px #aaaaaa; */
+    background-color: #CAC6DA;
 }
 
 .primary {
     color: #ffffff;
-    background-color: #F9F9F926;
+    background-color: #494465;
 }
 
 .secondary {
@@ -121,6 +128,18 @@ nav {
 
 p.brand {
     margin-top: auto;
+}
+
+.shop-item .shop-item-preview {
+    transition: 0.5s ease;
+}
+
+.shop-item .price {
+    transition: 0.5s ease;
+}
+
+.shop-item .name {
+    transition: 0.5s ease;
 }
 
 .shop {
@@ -133,4 +152,22 @@ p.brand {
 
 .shop-btn {
     margin: auto;
+}
+
+#hist {
+    margin-top: 100px;
+    background: url("/images/sofa_white.png") no-repeat right / contain;
+    height: 35vh;
+    padding: 80px 50% 80px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#hist p {
+    color: #505977;
+}
+
+#hist .hist {
+    margin-top: auto;
 }
